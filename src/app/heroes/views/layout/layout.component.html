@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <button mat-button [routerLink]="heroesListUrl">
+    <h1>{{ literals.appName }}</h1>
+  </button>
+  <span class="add-button-spacer"></span>
+  <button mat-raised-button [routerLink]="addHeroUrl">
+    <mat-icon>add</mat-icon>
+    {{ literals.add }}
+  </button>
+</mat-toolbar>
+
+<div class="container ml-6 mr-6">
+  <router-outlet></router-outlet>
+</div>

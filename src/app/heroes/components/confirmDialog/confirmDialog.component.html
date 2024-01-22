@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>{{ literals.sure }}</h1>
+<div mat-dialog-content>
+  <p>{{ literals.deleteHero }}{{ data.name }}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">{{ literals.no }}</button>
+  <span class="add-button-spacer"></span>
+  <button mat-button color="primary" (click)="onConfirm()" cdkFocusInitial>
+    {{ literals.yes }}
+  </button>
+</div>

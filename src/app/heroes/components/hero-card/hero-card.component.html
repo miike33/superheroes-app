@@ -1,0 +1,40 @@
+<mat-card>
+  <mat-card-header>
+    <span class="add-button-spacer"></span>
+    <button mat-mini-fab color="primary" [routerLink]="[editHeroUrl, hero.id]">
+      <mat-icon>edit</mat-icon>
+    </button>
+
+    <mat-card-title> {{ hero.name }} </mat-card-title>
+    <mat-card-subtitle> {{ hero.aliases }} </mat-card-subtitle>
+  </mat-card-header>
+
+  <img
+    class="col-12 sm:col-10 mt-2"
+    mat-card-image
+    [src]="hero.image"
+    alt="hero.name"
+  />
+
+  <mat-card-content class="mt-2 mb-3">
+    <mat-chip-listbox>
+      <mat-chip>
+        {{ hero.team }}
+      </mat-chip>
+      <mat-chip> {{ hero.city }} </mat-chip>
+    </mat-chip-listbox>
+  </mat-card-content>
+
+  <mat-divider class="mt-2"></mat-divider>
+  <mat-card-actions>
+    <button mat-raised-button [routerLink]="[showHeroUrl, hero.id]">
+      <mat-icon>more_horiz</mat-icon>
+      Detalles
+    </button>
+
+    <span class="add-button-spacer"></span>
+    <button mat-mini-fab color="warn" (click)="onDeleteHero(hero)">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>
