@@ -1,0 +1,27 @@
+<div class="flex justify-content-between mt-2">
+  <h1 class="mt-2">{{ literals.heroes }}</h1>
+  <mat-form-field class="flex align-items-baseline flex-wrap">
+    <mat-label>{{ literals.search }} </mat-label>
+    <input matInput type="text" [(ngModel)]="filterSearch" />
+    <button
+      *ngIf="filterSearch"
+      matSuffix
+      mat-icon-button
+      aria-label="Clear"
+      (click)="filterSearch = ''"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+</div>
+<mat-divider></mat-divider>
+
+<!-- Heroes cards -->
+<div *ngIf="heroesService.heroesList()" class="grid bm-8 mt-2">
+  <div
+    *ngFor="let hero of heroesService.heroesList() | heroFilter : filterSearch"
+    class="col-10 sm:col-4 md:col-3 xl:col-2"
+  >
+    <hero-card [hero]="hero"></hero-card>
+  </div>
+</div>

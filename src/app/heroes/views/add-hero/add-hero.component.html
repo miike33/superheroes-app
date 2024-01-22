@@ -1,0 +1,80 @@
+<h1 class="mt-2">{{ heroValues.id ? "Editar" : "Añadir" }} heroe</h1>
+<h2 *ngIf="heroValues.id" class="mt-2">{{ heroValues.name }}</h2>
+<mat-divider class="mb-2"></mat-divider>
+
+<div class="grid">
+  <div class="col-12 sm:col-6">
+    <mat-card>
+      <mat-card-content>
+        <form class="grid" [formGroup]="heroForm" (ngSubmit)="onSubmit()">
+          <!-- Nombre -->
+          <mat-form-field class="col-8 sm:col-12">
+            <mat-label> {{ literals.name }} </mat-label>
+            <input
+              toUpperCase
+              matInput
+              type="text"
+              required
+              formControlName="name"
+            />
+          </mat-form-field>
+          <!-- Alias -->
+          <mat-form-field class="col-8 sm:col-12">
+            <mat-label>{{ literals.alias }}</mat-label>
+            <input matInput type="text" required formControlName="aliases" />
+          </mat-form-field>
+          <!-- Team -->
+          <mat-form-field class="col-8 sm:col-12">
+            <mat-label>{{ literals.team }}</mat-label>
+            <mat-select required formControlName="team">
+              <mat-option *ngFor="let team of teamTypes" [value]="team">
+                {{ team }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <!-- Ciudad -->
+          <mat-form-field class="col-8 sm:col-12">
+            <mat-label>{{ literals.city }}</mat-label>
+            <input matInput type="text" required formControlName="city" />
+          </mat-form-field>
+          <!-- Imagen -->
+          <mat-form-field class="col-8 sm:col-12">
+            <mat-label>{{ literals.image }}</mat-label>
+            <input matInput type="text" required formControlName="image" />
+          </mat-form-field>
+        </form>
+        <!-- Botones -->
+        <div class="flex flex-row-reverse">
+          <button
+            class="ml-3"
+            color="primary"
+            mat-flat-button
+            (click)="onSubmit()"
+          >
+            <mat-icon>add</mat-icon>
+            {{ heroValues.id ? literals.update : literals.add }}
+          </button>
+          <span></span>
+          <button
+            *ngIf="heroValues.id"
+            (click)="onDeleteHero()"
+            color="warn"
+            mat-flat-button
+          >
+            <mat-icon>delete</mat-icon>
+            {{ literals.delete }}
+          </button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="col-12 sm:col-2">
+    <mat-card>
+      <img
+        mat-card-image
+        [src]="!!heroValues.image ? heroValues.image : literals.defaultImg"
+        alt="imagen del heroe"
+      />
+    </mat-card>
+  </div>
+</div>

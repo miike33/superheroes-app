@@ -1,0 +1,124 @@
+{
+  "superheroes": [
+    {
+      "id": "superman",
+      "name": "Superman",
+      "aliases": "El Hombre de Acero",
+      "team": "Liga de la Justicia",
+      "city": "Metropolis",
+      "image": "https://i.pinimg.com/736x/db/15/ba/db15bac66d1fb1794d53eaa90e5af7db.jpg"
+    },
+    {
+      "id": "batman",
+      "name": "Batman",
+      "aliases": "El Caballero de la Noche",
+      "team": "Liga de la Justicia",
+      "city": "Gotham",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpYlyQIlaavqSIN4JJGnFFX2z2X4WKJhITwA&usqp=CAU"
+    },
+    {
+      "id": "wonderwoman",
+      "name": "Wonder Woman",
+      "aliases": "La Mujer Maravilla",
+      "team": "Liga de la Justicia",
+      "city": "Themyscira",
+      "image": "https://i.ebayimg.com/images/g/-k4AAOSwRTJeqcW~/s-l1200.webp"
+    },
+    {
+      "id": "spiderman",
+      "name": "Spider-Man",
+      "aliases": "El Hombre Araña",
+      "team": "Vengadores",
+      "city": "Nueva York",
+      "image": "https://m.media-amazon.com/images/I/817Y30G6CBL.jpg"
+    },
+    {
+      "id": "ironman",
+      "name": "Iron Man",
+      "aliases": "Tony Stark",
+      "team": "Vengadores",
+      "city": "Malibú",
+      "image": "https://comicvine.gamespot.com/a/uploads/scale_small/12/124259/8654427-ezgif-1-2f113089e4.jpg"
+    },
+    {
+      "id": "flash",
+      "name": "The Flash",
+      "aliases": "Barry Allen",
+      "team": "Liga de la Justicia",
+      "city": "Central City",
+      "image": "https://i.pinimg.com/originals/2a/33/40/2a33400f5e4b9cd90fc4645c19f28b2e.jpg"
+    },
+    {
+      "id": "captainamerica",
+      "name": "Captain America",
+      "aliases": "Steve Rogers",
+      "team": "Vengadores",
+      "city": "Nueva York",
+      "image": "https://i.pinimg.com/474x/15/7e/7f/157e7f9276defb452a2e1e584197d719.jpg"
+    },
+    {
+      "id": "thor",
+      "name": "Thor",
+      "aliases": "Dios del Trueno",
+      "team": "Vengadores",
+      "city": "Asgard",
+      "image": "https://i.ebayimg.com/images/g/H1oAAOSwSJBjNu3S/s-l1600.jpg"
+    },
+    {
+      "id": "wolverine",
+      "name": "Wolverine",
+      "aliases": "Logan",
+      "team": "X-Men",
+      "city": "Canadá",
+      "image": "https://i5.walmartimages.com/seo/Marvel-Comics-Wolverine-Wolverine-1-Wall-Poster-14-725-x-22-375_54db3a34-02ae-4a2b-b8a9-59a2dd735b94.cdc19026d63af4a60a2e57e89f4c702d.jpeg"
+    },
+    {
+      "id": "greenlantern",
+      "name": "Green Lantern",
+      "aliases": "Linterna Verde",
+      "team": "Liga de la Justicia",
+      "city": "Coast City",
+      "image": "https://www.radarcomics.com/es/imagenes/8788400/878840089686.JPG"
+    },
+    {
+      "id": "hulk",
+      "name": "Hulk",
+      "aliases": "Bruce Banner",
+      "team": "Vengadores",
+      "city": "Ciudad Gamma",
+      "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/64/Incredible_Hulk_Vol_2_75_Textless.jpg"
+    },
+    {
+      "id": "aquaman",
+      "name": "Aquaman",
+      "aliases": "Arthur Curry",
+      "team": "Liga de la Justicia",
+      "city": "Atlantis",
+      "image": "https://pm1.aminoapps.com/6633/17b4b4db502285aadb90f362bcc9e7d24c0cbd76_00.jpg"
+    },
+    {
+      "id": "blackpanther",
+      "name": "Black Panther",
+      "aliases": "T'Challa",
+      "team": "Vengadores",
+      "city": "Wakanda",
+      "image": "https://upload.wikimedia.org/wikipedia/en/9/9f/Black_Panther_OS_Vol_1_2.png"
+    },
+    {
+      "id": "doctorstrange",
+      "name": "Doctor Strange",
+      "aliases": "Stephen Strange",
+      "team": "Vengadores",
+      "city": "Sanctum Sanctorum",
+      "image": "https://i.pinimg.com/originals/7c/3f/33/7c3f3364f4ec0e830daeccdeb47078bf.jpg"
+    },
+    {
+      "id": "antman",
+      "name": "Ant-Man",
+      "aliases": "Scott Lang",
+      "team": "Vengadores",
+      "city": "San Francisco",
+      "image": "https://i.pinimg.com/474x/da/b9/13/dab913dacebd200f3d1ef48029259740.jpg"
+    }
+  ]
+}
